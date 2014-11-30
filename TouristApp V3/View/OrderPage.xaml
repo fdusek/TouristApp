@@ -54,7 +54,7 @@
                     </Grid>
                 </StackPanel>
             </Grid>
-            <Button Name="backButton" Margin="39,59,39,0" Command="{Binding GoBack}"
+            <Button Name="backButton" Margin="39,59,39,0"
                         Style="{StaticResource NavigationBackButtonNormalStyle}"
                         VerticalAlignment="Top"
                         AutomationProperties.Name="Back"

@@ -46,3 +46,8 @@ C:\Users\Filip\Desktop\Tourapp\TouristApp V3\TouristApp V3\obj\x86\Debug\View\Ad
 C:\Users\Filip\Desktop\Tourapp\TouristApp V3\TouristApp V3\obj\x86\Debug\View\AddCategoryPage.g.cs
 C:\Users\Filip\Desktop\Tourapp\TouristApp V3\TouristApp V3\obj\x86\Debug\View\AddCategoryPage.xaml
 C:\Users\Filip\Desktop\Tourapp\TouristApp V3\TouristApp V3\obj\x86\Debug\View\AddCategoryPage.xbf
+C:\Users\Filip\Desktop\Tourapp\TouristApp V3\TouristApp V3\bin\x86\Debug\View\AddItemPage.xbf
+C:\Users\Filip\Desktop\Tourapp\TouristApp V3\TouristApp V3\obj\x86\Debug\View\AddItemPage.g.i.cs
+C:\Users\Filip\Desktop\Tourapp\TouristApp V3\TouristApp V3\obj\x86\Debug\View\AddItemPage.g.cs
+C:\Users\Filip\Desktop\Tourapp\TouristApp V3\TouristApp V3\obj\x86\Debug\View\AddItemPage.xaml
+C:\Users\Filip\Desktop\Tourapp\TouristApp V3\TouristApp V3\obj\x86\Debug\View\AddItemPage.xbf

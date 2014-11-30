@@ -109,7 +109,7 @@ namespace TouristApp_V3.ViewModel
                 {
                     foreach (Item item in _items) //loop through all meals, no matter what category are they
                     {
-                        if (item.CategoryName == _selectedCategory.Name) //if the category matches with selected category
+                        if (item.CategoryID == _selectedCategory.ID) //if the category matches with selected category
                         {
                             temp.Add(item); //add it to temporary list
                         }
@@ -177,7 +177,7 @@ namespace TouristApp_V3.ViewModel
                     var tempItem = new Item()
                     {
                         ID = _item.ID,
-                        CategoryName = _item.CategoryName,
+                        CategoryID = _item.CategoryID,
                         DES = _item.DES,
                         Image = _item.Image,
                         Name = _item.Name,
@@ -190,7 +190,7 @@ namespace TouristApp_V3.ViewModel
                 var query2 = db.Table<Category>().OrderBy(c => c.Name);
                 foreach (var _item in query2)
                 {
-                    _foodCategories.Add(new Category(_item.Name));
+                    _foodCategories.Add(new Category(_item.Name, _item.ID));
                 }
             }
 

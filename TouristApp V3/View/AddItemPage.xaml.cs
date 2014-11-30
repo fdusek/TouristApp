@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using TouristApp_V3.Model;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
@@ -25,6 +26,29 @@ namespace TouristApp_V3.View
         public AddItemPage()
         {
             this.InitializeComponent();
+        }
+
+        private void backButton_Click_1(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(MainPage));
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            using (var db = new SQLite.SQLiteConnection(App.DBPath))
+            {
+                // Create the tables if they don't exist
+                db.CreateTable<Item>();
+                db.Insert(new Item()
+                {
+                    Price = Convert.ToInt32(TextBoxPrice.Text),
+                    Name = TextBoxName.Text,
+                    Image = TextBoxImage.Text,
+                    DES = TextBoxDescription.Text,
+                    CategoryID = Convert.ToInt32(TextBoxCategoryID.Text)
+                });
+            }
+
         }
     }
 }

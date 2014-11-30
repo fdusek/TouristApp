@@ -8,6 +8,14 @@ namespace TouristApp_V3.Model
 {
     class Category
     {
+        private int _id;
+
+        public int ID
+        {
+            get { return _id; }
+            set { _id = value; }
+        }
+
         private string _name;
 
         public string Name
@@ -15,9 +23,10 @@ namespace TouristApp_V3.Model
             get { return _name; }
             set { _name = value; }
         }
-        public Category(String name)
+        public Category(String name, int ID)
         {
             _name = name;
+            _id = ID;
         }
         public Category()
         {

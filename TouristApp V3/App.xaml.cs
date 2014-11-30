@@ -82,13 +82,14 @@ namespace TouristApp_V3
                     db.CreateTable<Category>();
                     db.DeleteAll<Category>();
                     db.DeleteAll<Item>();
-                    db.Insert(new Category("Meals"));
-                    db.Insert(new Category("Desserts"));
-                    db.Insert(new Category("Drinks"));
+                   
+                    db.Insert(new Category("Meals", 1));
+                    db.Insert(new Category("Desserts", 2));
+                    db.Insert(new Category("Drinks", 3));
 
                     db.Insert(new Item()
                     {
-                        CategoryName = "Meals",
+                        CategoryID = 1,
                         Name = "Pea Soup",
                         Image = "../Assets/Food1.jpg",
                         DES = "Dutch pea soup served with rye bread and if you're not vegan serveed with smoked bacon",
@@ -97,7 +98,7 @@ namespace TouristApp_V3
                     db.Insert(new Item()
                     {
 
-                        CategoryName = "Meals",
+                        CategoryID = 1,
                         Name = "Grilled Salmon",
                         Image = "../Assets/Food2.jpg",
                         DES = "Grilled Salmon with soy sauce and brown sugar marinade with an addition fo Grilled Beans.",
@@ -106,7 +107,7 @@ namespace TouristApp_V3
                     db.Insert(new Item()
                     {
 
-                        CategoryName = "Meals",
+                        CategoryID = 1,
                         Name = "Hamburger",
                         Image = "../Assets/Food3.jpg",
 
@@ -115,7 +116,7 @@ namespace TouristApp_V3
                     });
                     db.Insert(new Item()
                     {
-                        CategoryName = "Meals",
+                        CategoryID = 1,
                         Name = "Hamburger",
                         DES = "with Salad, Cheese, Tomatoes, pickles and a fresh eco beef.",
                         Image = "../Assets/Food3.jpg",
@@ -124,7 +125,7 @@ namespace TouristApp_V3
 
                     db.Insert(new Item()
                     {
-                        CategoryName = "Meals",
+                        CategoryID = 1,
                         Name = "Squash Risotto",
                         DES = "If you like the natural sweet flavor of butternut squash, you'll love this risotto! It is so creamy and full of flavor! Great as a side dish or main course.",
                         Image = "../Assets/Food4.jpg",
@@ -132,7 +133,7 @@ namespace TouristApp_V3
                     });
                     db.Insert(new Item()
                     {
-                        CategoryName = "Meals",
+                        CategoryID = 1,
                         Name = "Pumpkin curry",
                         DES = "A veggie dinner party dish which stands alone as a vegan main course or as a complex side dish perfect served with spiced roast meat or fish",
                         Image = "../Assets/Food5.jpg",
@@ -140,7 +141,7 @@ namespace TouristApp_V3
                     });
                     db.Insert(new Item()
                     {
-                        CategoryName = "Meals",
+                        CategoryID = 1,
                         Name = "Ribs",
                         DES = "Beef rib, a French style bone-in rib eye steak, served with french fries or potatoes",
                         Image = "../Assets/Food6.jpg",
@@ -148,7 +149,7 @@ namespace TouristApp_V3
                     });
                     db.Insert(new Item()
                     {
-                        CategoryName = "Meals",
+                        CategoryID = 1,
                         Name = "Ceasars Salad",
                         DES = "salad of romaine lettuce and croutons dressed with parmesan cheese, lemon juice, olive oil, egg, Worcestershire sauce, garlic, and black pepper.",
                         Image = "../Assets/Food7.jpg",
@@ -156,7 +157,7 @@ namespace TouristApp_V3
                     });
                     db.Insert(new Item()
                     {
-                        CategoryName = "Meals",
+                        CategoryID = 1,
                         Name = "Encebollado",
                         DES = "is a fish stew from Ecuador, regarded as a national dish. It is served with boiled cassava and pickled red onion rings. A dressing of onion is prepared with fresh tomato and spices such as pepper or coriander leaves. It is commonly prepared with albacore, but also tuna, billfish, or bonito. It may be served with ripe avocado.",
                         Image = "../Assets/Food8.jpg",
@@ -164,7 +165,7 @@ namespace TouristApp_V3
                     });
                     db.Insert(new Item()
                     {
-                        CategoryName = "Meals",
+                        CategoryID = 1,
                         Name = "Dopiaza",
                         DES = "Dopiaza is a South-Asian curry dish. It is prepared with a large amount of onions, both cooked in the curry and as a garnish. In our version there is Beef, red chilli peppers and of course curry.",
                         Image = "../Assets/Food9.jpg",
@@ -172,7 +173,7 @@ namespace TouristApp_V3
                     });
                     db.Insert(new Item()
                     {
-                        CategoryName = "Meals",
+                        CategoryID = 1,
                         Name = "Frikadeller",
                         DES = "Frikadeller made from pork, chopped onions and bread crumbs served with boiled white potatoes and gravy (brun sovs) accompanied by pickled beetroot",
                         Image = "../Assets/Food10.jpg",
@@ -180,7 +181,7 @@ namespace TouristApp_V3
                     });
                     db.Insert(new Item()
                     {
-                        CategoryName = "Meals",
+                        CategoryID = 1,
                         Name = "Filet of plaice",
                         DES = "Breaded Filet of Plaice with fried potatoes and remoulade",
                         Image = "../Assets/Food11.jpg",
@@ -188,7 +189,7 @@ namespace TouristApp_V3
                     });
                     db.Insert(new Item()
                     {
-                        CategoryName = "Meals",
+                        CategoryID = 1,
                         Name = "Aebleflaesk",
                         DES = " fried pork slices served with a compote of apple, onion and bacon served on rugbrod",
                         Image = "../Assets/Food12.jpg",
@@ -196,7 +197,7 @@ namespace TouristApp_V3
                     });
                     db.Insert(new Item()
                     {
-                        CategoryName = "Meals",
+                        CategoryID = 1,
                         Name = "Medisterpolse",
                         DES = " thick, spicy sausage made of minced pork, fried and served in a variety of ways. We can serve it with rye bread and mustard if asked.",
                         Image = "../Assets/Food13.jpg",
@@ -204,7 +205,7 @@ namespace TouristApp_V3
                     });
                     db.Insert(new Item()
                     {
-                        CategoryName = "Meals",
+                        CategoryID = 1,
                         Name = "Brandende karlighed",
                         DES = "is a traditional Danish dish[1] of mashed potatoes, butter, and whole milk or cream with Minced meat steaks, capers and carrots",
                         Image = "../Assets/Food14.jpg",
@@ -212,7 +213,7 @@ namespace TouristApp_V3
                     });
                     db.Insert(new Item()
                     {
-                        CategoryName = "Meals",
+                        CategoryID = 1,
                         Name = "Ollebrod",
                         DES = " It is a kind of porridge made of rugbrod and beer served with whipped cream and a drizzle of orange zest",
                         Image = "../Assets/Food15.jpg",
@@ -220,7 +221,7 @@ namespace TouristApp_V3
                     });
                     db.Insert(new Item()
                     {
-                        CategoryName = "Meals",
+                        CategoryID = 1,
                         Name = "Roast Pork",
                         DES = "Served with both boiled and caramelized Potatoes (brunede kartofler)",
                         Image = "../Assets/Food16.jpg",
@@ -228,7 +229,7 @@ namespace TouristApp_V3
                     });
                     db.Insert(new Item()
                     {
-                        CategoryName = "Desserts",
+                        CategoryID = 2,
                         ID = 3,
                         Name = "Apple charlotte",
                         DES = "Cold Danish charlotte served in a glass with ice cream.",
@@ -237,7 +238,7 @@ namespace TouristApp_V3
                     });
                     db.Insert(new Item()
                     {
-                        CategoryName = "Desserts",
+                        CategoryID = 2,
                         
                         Name = "Rodgrod med flode",
                         DES = "served hot or cold (both are available at every our) as a dessert with milk, a mixture of milk and vanilla sugar, vanilla sauce, (whipped) cream or custard to balance the refreshing taste of the fruit acids.",
@@ -246,7 +247,7 @@ namespace TouristApp_V3
                     });
                     db.Insert(new Item()
                     {
-                        CategoryName = "Desserts",
+                        CategoryID = 2,
                         
                         Name = "Buttermilk koldskal",
                         DES = "Is a sweet cold soup made with buttermilk and eggs, cream, vanilla served with dry, crispy biscuits",
@@ -255,7 +256,7 @@ namespace TouristApp_V3
                     });
                     db.Insert(new Item()
                     {
-                        CategoryName = "Desserts",
+                        CategoryID = 2,
                         
                         Name = "Risalamande",
                         DES = "made out of rice pudding mixed with whipped cream, vanilla, and chopped almonds, can be served cold with a cherry sauce if wanted",
@@ -264,7 +265,7 @@ namespace TouristApp_V3
                     });
                     db.Insert(new Item()
                     {
-                        CategoryName = "Desserts",
+                        CategoryID = 2,
                         
                         Name = "Bábovka",
                         DES = "contains candied fruits and nuts with a layer of sweetened ground poppy seeds. We recommend it with coffee.",
@@ -273,7 +274,7 @@ namespace TouristApp_V3
                     });
                     db.Insert(new Item()
                     {
-                        CategoryName = "Desserts",
+                        CategoryID = 2,
                         
                         Name = "Wuzetka",
                         DES = "sweet cake, consisting of cocoa sponge cake, jam, whipped cream and a chocolate pomade.",
@@ -282,7 +283,7 @@ namespace TouristApp_V3
                     });
                     db.Insert(new Item()
                     {
-                        CategoryName = "Desserts",
+                        CategoryID = 2,
                         
                         Name = "Cheese Cake",
                         DES = " consists of a mixture of soft, fresh cheese, eggs, and sugar. the bottom layer it often consists of a crust or base made from digestive biscuit. Served with all kinds of berries.",
@@ -291,27 +292,26 @@ namespace TouristApp_V3
                     });
                     db.Insert(new Item()
                     {
-                        CategoryName = "Drinks",
-                        
+                        CategoryID = 3,   
                         Image = "../Assets/Drink1.jpg",
                         Name = "Orange Juice",
                         DES = "Made from fresh eco Oranges",
                         Price = 20
                     });
 
-                    db.Insert(new Item() { CategoryName = "Drinks",  Image = "../Assets/Drink2.jpg", Name = "Apple Juice", DES = "Made from fresh eco Apples", Price = 20 });
-                    db.Insert(new Item() { CategoryName = "Drinks",  Image = "../Assets/Drink3.jpg", Name = "Tuborg", DES = "First pilsner that has been brewed in Denmark", Price = 60 });
-                    db.Insert(new Item() { CategoryName = "Drinks",  Image = "../Assets/Drink4.jpg", Name = "Carlsberg", DES = "Most famous Danish Beer. That calls for a Carlsberg!", Price = 60 });
-                    db.Insert(new Item() { CategoryName = "Drinks",  Image = "../Assets/Drink5.jpg", Name = "Pilsner Urquell", DES = "First Pilsner beer in the world", Price = 50 });
-                    db.Insert(new Item() { CategoryName = "Drinks",  Image = "../Assets/Drink6.jpg", Name = "Namyslow", DES = "Namyslow  White wheat is a polish beer from the brewery in Namyslow. YOu can taste wheat when drinking it.", Price = 50 });
-                    db.Insert(new Item() { CategoryName = "Drinks",  Image = "../Assets/Drink7.jpg", Name = "Miloslaw", DES = "Miloslaw unfiltered is a polish Beer from Miloslaw. It's unfiltered (niefiltrowane). WOn the Grand Prix Chmielaki in 2012", Price = 50 });
-                    db.Insert(new Item() { CategoryName = "Drinks",  Image = "../Assets/Drink8.jpg", Name = "Dark Rain", DES = "Black Pale Ale from Oregon's oldest craft brewery BridgePort Brewing", Price = 100 });
-                    db.Insert(new Item() { CategoryName = "Drinks",  Image = "../Assets/Drink9.jpg", Name = "Sobieski", DES = "One of the best Polish Vodka. Great with fish.", Price = 20 });
-                    db.Insert(new Item() { CategoryName = "Drinks",  Image = "../Assets/Drink10.jpg", Name = "Barrail Meyney", DES = "Great red wine from 2009 from Bordeaux", Price = 60 });
-                    db.Insert(new Item() { CategoryName = "Drinks",  Image = "../Assets/Drink11.jpg", Name = "Casa Mia Fiano", DES = "Wine from the vineyards of France, this wine brand has a hint of honey which gives it a heavenly taste and aroma.", Price = 50 });
-                    db.Insert(new Item() { CategoryName = "Drinks",  Image = "../Assets/Drink12.jpeg", Name = "Coca Cola", DES = "The most popular Soft Drink in the world", Price = 50 });
-                    db.Insert(new Item() { CategoryName = "Drinks",  Image = "../Assets/Drink13.jpg", Name = "Coffee", DES = "The best dark drink ever invented by man kind.", Price = 30 });
-                    db.Insert(new Item() {CategoryName = "Drinks",  Image = "../Assets/Drink14.jpg", Name = "Tea", DES = "Is it 5PM already?", Price = 30 });
+                    db.Insert(new Item() { CategoryID = 3,  Image = "../Assets/Drink2.jpg", Name = "Apple Juice", DES = "Made from fresh eco Apples", Price = 20 });
+                    db.Insert(new Item() { CategoryID = 3,  Image = "../Assets/Drink3.jpg", Name = "Tuborg", DES = "First pilsner that has been brewed in Denmark", Price = 60 });
+                    db.Insert(new Item() { CategoryID = 3,  Image = "../Assets/Drink4.jpg", Name = "Carlsberg", DES = "Most famous Danish Beer. That calls for a Carlsberg!", Price = 60 });
+                    db.Insert(new Item() { CategoryID = 3,  Image = "../Assets/Drink5.jpg", Name = "Pilsner Urquell", DES = "First Pilsner beer in the world", Price = 50 });
+                    db.Insert(new Item() { CategoryID = 3,  Image = "../Assets/Drink6.jpg", Name = "Namyslow", DES = "Namyslow  White wheat is a polish beer from the brewery in Namyslow. YOu can taste wheat when drinking it.", Price = 50 });
+                    db.Insert(new Item() { CategoryID = 3,  Image = "../Assets/Drink7.jpg", Name = "Miloslaw", DES = "Miloslaw unfiltered is a polish Beer from Miloslaw. It's unfiltered (niefiltrowane). WOn the Grand Prix Chmielaki in 2012", Price = 50 });
+                    db.Insert(new Item() { CategoryID = 3,  Image = "../Assets/Drink8.jpg", Name = "Dark Rain", DES = "Black Pale Ale from Oregon's oldest craft brewery BridgePort Brewing", Price = 100 });
+                    db.Insert(new Item() { CategoryID = 3,  Image = "../Assets/Drink9.jpg", Name = "Sobieski", DES = "One of the best Polish Vodka. Great with fish.", Price = 20 });
+                    db.Insert(new Item() { CategoryID = 3,  Image = "../Assets/Drink10.jpg", Name = "Barrail Meyney", DES = "Great red wine from 2009 from Bordeaux", Price = 60 });
+                    db.Insert(new Item() { CategoryID = 3,  Image = "../Assets/Drink11.jpg", Name = "Casa Mia Fiano", DES = "Wine from the vineyards of France, this wine brand has a hint of honey which gives it a heavenly taste and aroma.", Price = 50 });
+                    db.Insert(new Item() { CategoryID = 3,  Image = "../Assets/Drink12.jpeg", Name = "Coca Cola", DES = "The most popular Soft Drink in the world", Price = 50 });
+                    db.Insert(new Item() { CategoryID = 3,  Image = "../Assets/Drink13.jpg", Name = "Coffee", DES = "The best dark drink ever invented by man kind.", Price = 30 });
+                    db.Insert(new Item() {CategoryID = 3,  Image = "../Assets/Drink14.jpg", Name = "Tea", DES = "Is it 5PM already?", Price = 30 });
                 }
 
 

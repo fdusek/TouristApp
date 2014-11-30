@@ -155,6 +155,9 @@
     <AppxPackagedFile Include="C:\Users\Filip\Desktop\Tourapp\TouristApp V3\TouristApp V3\bin\x86\Debug\View\AddCategoryPage.xbf">
       <PackagePath>View\AddCategoryPage.xbf</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Filip\Desktop\Tourapp\TouristApp V3\TouristApp V3\bin\x86\Debug\View\AddItemPage.xbf">
+      <PackagePath>View\AddItemPage.xbf</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Filip\Desktop\Tourapp\TouristApp V3\TouristApp V3\bin\x86\Debug\View\MainPage.xbf">
       <PackagePath>View\MainPage.xbf</PackagePath>
     </AppxPackagedFile>

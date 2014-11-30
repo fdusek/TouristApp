@@ -10,14 +10,15 @@ namespace TouristApp_V3.Model
     class Item
     {
         public int ID { get; set; }
-        private string _category;
 
-        public string CategoryName
+        private int _categoryID;
+
+        public int CategoryID
         {
-            get { return _category; }
-            set { _category = value; }
+            get { return _categoryID; }
+            set { _categoryID = value; }
         }
-
+        
         private string _name;
         
 

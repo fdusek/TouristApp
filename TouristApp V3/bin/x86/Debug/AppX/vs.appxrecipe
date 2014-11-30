@@ -20,13 +20,13 @@
     <AppXManifest Include="C:\Users\Filip\Desktop\Tourapp\TouristApp V3\TouristApp V3\bin\x86\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2014-11-29T22:34:58.478</Modified>
+      <Modified>2014-11-30T10:51:25.022</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Filip\Desktop\Tourapp\TouristApp V3\TouristApp V3\bin\x86\Debug\TouristApp V3.exe">
       <PackagePath>TouristApp V3.exe</PackagePath>
-      <Modified>2014-11-29T22:34:57.424</Modified>
+      <Modified>2014-11-30T12:13:08.406</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\SQLite.WinRT81\3.8.7.1\Redist\Debug\x86\sqlite3.dll">
       <PackagePath>sqlite3.dll</PackagePath>
@@ -206,15 +206,19 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Filip\Desktop\Tourapp\TouristApp V3\TouristApp V3\bin\x86\Debug\View\AddCategoryPage.xbf">
       <PackagePath>View\AddCategoryPage.xbf</PackagePath>
-      <Modified>2014-11-29T22:34:56.880</Modified>
+      <Modified>2014-11-30T11:21:33.278</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Filip\Desktop\Tourapp\TouristApp V3\TouristApp V3\bin\x86\Debug\View\AddItemPage.xbf">
+      <PackagePath>View\AddItemPage.xbf</PackagePath>
+      <Modified>2014-11-30T11:21:33.278</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Filip\Desktop\Tourapp\TouristApp V3\TouristApp V3\bin\x86\Debug\View\MainPage.xbf">
       <PackagePath>View\MainPage.xbf</PackagePath>
-      <Modified>2014-11-29T22:34:56.881</Modified>
+      <Modified>2014-11-30T11:21:33.282</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Filip\Desktop\Tourapp\TouristApp V3\TouristApp V3\bin\x86\Debug\View\OrderPage.xbf">
       <PackagePath>View\OrderPage.xbf</PackagePath>
-      <Modified>2014-11-29T20:01:24.481</Modified>
+      <Modified>2014-11-30T11:21:33.283</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Filip\Desktop\Tourapp\TouristApp V3\TouristApp V3\bin\x86\Debug\View\TableSettings.xbf">
       <PackagePath>View\TableSettings.xbf</PackagePath>
@@ -222,11 +226,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Filip\Desktop\Tourapp\TouristApp V3\TouristApp V3\bin\x86\Debug\TouristApp V3.xr.xml">
       <PackagePath>TouristApp V3.xr.xml</PackagePath>
-      <Modified>2014-11-29T22:34:56.778</Modified>
+      <Modified>2014-11-30T10:59:54.205</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Filip\Desktop\Tourapp\TouristApp V3\TouristApp V3\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2014-11-29T22:34:57.945</Modified>
+      <Modified>2014-11-30T10:51:23.930</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
